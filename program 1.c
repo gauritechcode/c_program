@@ -1,58 +1,52 @@
-#include<stdio.h>
+#include <stdio.h>
 void main()
 {
-int a;
-printf("Enter the value");
-scanf("%d",&a);
+ int a;
+ printf("enter any values");
+ scanf("%d",&a);
 
-switch(a){
+
+ for(int i=0; i<=6; i++)
+ {
+
+ for(int j=0; j<=6; j++){
+
+  switch(a){
+
 
 case 1:
-
-for(int i=1; i<=10; i++)
-{
-
-printf("%d\n",i);
-}
-break;
+     printf("%c ",65+j);
+      break;
 
 case 2:
+    printf("%d ",i);
+    break;
 
-for(int i=1; i<=10; i++)
-{
-
-printf("%d\n",i*2);
-}
-break;
 
 case 3:
-
-for(int i=1; i<=10; i++)
-{
-
-printf("%d\n",i*3);
-}
-break;
-case 4:
-
-for(int i=1; i<=10; i++)
-{
-printf("%d\n",i*4);
-
-}
-break;
-
-case 5:
-    for(int i=1; i<=10; i++)
-    {
-    printf("%d\n",i*5);
-    }
-break;
-
+      printf("* ");
+      break;
 
 default :
     printf("please try again");
-}
+
+
+
+  }
+
+ }
+
+ printf("\n");
+
+
+ }
+
+
+
+
+
+
+
 
 
 
